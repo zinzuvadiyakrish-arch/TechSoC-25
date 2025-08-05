@@ -1,4 +1,4 @@
-# 🧮 Problem Statement 0: Mathematical Calculator
+# Problem Statement 0: Mathematical Calculator
 
 [![Difficulty](https://img.shields.io/badge/Difficulty-Complete%20Beginner%20to%20Intermediate-orange.svg)](#)
 [![Concepts](https://img.shields.io/badge/Concepts-Math%20|%20Algorithms%20|%20Series-blue.svg)](#)
@@ -6,11 +6,11 @@
 
 ---
 
-## 🎯 Problem Overview
+## Problem Overview
 
 Welcome to your first coding challenge! 🎉 You'll build a **mathematical calculator** in the terminal, that can perform basic and advanced operations **without using any built-in math libraries**. This means you'll implement logarithms, exponentials, and trigonometric functions from scratch using mathematical algorithms!
 
-**Why this challenge?** 🤔
+**Why this challenge?** 
 - Learn fundamental mathematical algorithms
 - Understand how computers actually calculate complex functions
 - Build confidence with series expansions and numerical methods
@@ -18,9 +18,9 @@ Welcome to your first coding challenge! 🎉 You'll build a **mathematical calcu
 
 ---
 
-## 📋 Requirements
+## Requirements
 
-### **🔢 Basic Operations (Level 1)**
+### **Basic Operations (Level 1)**
 Your calculator must support:
 - ✅ **Addition** (`+`)
 - ✅ **Subtraction** (`-`) 
@@ -29,14 +29,14 @@ Your calculator must support:
 - ✅ **Power** (`^` or `**`)
 - ✅ **Square Root** (`sqrt`) 
 
-### **📈 Advanced Operations (Level 2)**
+### **Advanced Operations (Level 2)**
 Implement these **without using math libraries**:
 - ✅ **Natural Logarithm** (`ln`) 
 - ✅ **Logarithm base 10** (`log10`)
 - ✅ **Exponential** (`exp`)
 - ✅ **Power with decimal exponents** (`a^b` where b can be decimal)
 
-### **📐 Trigonometric Functions (Level 3)**
+### **Trigonometric Functions (Level 3)**
 - ✅ **Sine** (`sin`) - input in radians
 - ✅ **Cosine** (`cos`) - input in radians  
 - ✅ **Tangent** (`tan`) - input in radians
@@ -45,7 +45,7 @@ Implement these **without using math libraries**:
 **NO GUI IS REQUIRED FOR ANY LEVEL. INPUTS IN THE TERMINAL ARE SUFFICIENT**
 ---
 
-## 🧪 Test Cases
+## Test Cases
 
 ### **Basic Operations:**
 ```
@@ -93,13 +93,13 @@ Output: ≈ 1.0
 
 By completing this challenge, you'll learn:
 
-### **💻 Programming Skills:**
+### **Programming Skills:**
 - Algorithm implementation from mathematical descriptions
 - Handling floating-point precision
 - Error handling and edge case management
 - Code organization and modular design
 
-### **🔬 Problem-Solving:**
+### **Problem-Solving:**
 - Breaking complex problems into smaller parts
 - Research and implementation of mathematical algorithms
 - Testing and validation strategies
@@ -109,12 +109,12 @@ By completing this challenge, you'll learn:
 
 ## 🚀 Getting Started
 
-1. **📖 Research the mathematical algorithms** for each function
-2. **🏗️ Start with basic operations** and test thoroughly
-3. **📈 Implement one advanced function at a time**
-4. **🧪 Test each function with known values**
-5. **📝 Document your learning process**
-6. **🎨 Add user interface and bonus features**
+1. **Research the mathematical algorithms** for each function
+2. **Start with basic operations** and test thoroughly
+3. **Implement one advanced function at a time**
+4. **Test each function with known values**
+5. **Document your learning process**
+6. **Add user interface and bonus features**
 
 ---
 
@@ -146,7 +146,5 @@ By completing this challenge, you'll learn:
 - 🌟 **Creative bonus features**
 
 ---
-
-**🎉 Ready to build your mathematical calculator? Let's code! 💻**
 
 *Remember: The goal is learning, not perfection. Start simple and build up! 🌱*

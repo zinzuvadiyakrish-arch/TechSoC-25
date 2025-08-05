@@ -22,9 +22,9 @@ Forget boring theory! Jump straight into exciting challenges that teach you prog
 This event is crafted by fellow students who understand exactly what you need to succeed in competitive programming and club selections.
 
 ### **📈 Progressive Difficulty**
-- **🌱 Start Simple:** Basic concepts everyone can grasp
-- **💪 Build Confidence:** Each problem builds on the previous in complexity 
-- **🏆 Reach Excellence:** Advanced challenges for those who want more
+- **Start Simple:** Basic concepts everyone can grasp
+- **Build Confidence:** Each problem builds on the previous in complexity 
+- **Reach Excellence:** Advanced challenges for those who want more
 
 ### **🎁 Bonus Levels Await**
 Complete the main challenges early? We've got **exclusive bonus levels** that will push your skills even further and keep the excitement going! 🔥
@@ -32,11 +32,11 @@ Complete the main challenges early? We've got **exclusive bonus levels** that wi
 ## Resources at Your Fingertips
 
 Stuck on a concept? Don't worry! Check out our comprehensive [**Resources Guide**](RESOURCES.md) featuring:
-- 💻 Interactive coding tutorials
-- 🎥 Video courses  
-- 📋 Reference materials for quick lookups
-- 📖 Websites for those who learn by reading
-- 🌟 Community-recommended learning paths
+- Interactive coding tutorials
+- Video courses  
+- Reference materials for quick lookups
+- Websites for those who learn by reading
+- Community-recommended learning paths
 
 *Remember: The goal isn't to know everything upfront - it's to learn how to learn!*
 
@@ -379,11 +379,7 @@ Keep the momentum going! 💪
 
 ### 🎓 **Crafted by Students, For Students**
 
-This challenge was created with **passion** and **dedication** by fellow students at **IIT Indore** who believe in **learning by doing**. 
-
-
-**Our Promise:** 🤝  
-*Every line of this challenge, every problem statement, and every resource was carefully designed to help YOU succeed in your coding journey.*
+This challenge was created by fellow students at **IIT Indore** who believe in **learning by doing**. 
 
 ---
 

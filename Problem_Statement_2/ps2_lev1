@@ -1,0 +1,58 @@
+import math
+import sys
+
+from Tools.scripts.dutree import display
+
+damage=0
+
+class Pokemon:
+    def __init__(self,name,hp,attack,defense,speed,moves):
+        self.name = name
+        self.hp = hp
+        self.hp_denominator=hp
+        self.attack =attack
+        self.defense =defense
+        self.speed = speed
+        self.moves = moves
+
+    def display_stats(self):
+        print("Name:",self.name,end=" ")
+        print("HP:" + str(self.hp) + "/" + str(self.hp_denominator),end=" ")
+        print ("Attack:",self.attack,end=" ")
+        print("Defense:",self.defense,end=" ")
+        print("Speed:",self.speed,end=" ")
+        print("Moves:",self.moves)
+
+    def attack_on(self,defender,num) :
+        damage= math.ceil((self.moves[num][1])*(self.attack)/defender.defense)
+        print(f"{self.name} used {self.moves[num][0]} ")
+        print(f"{defender.name} took {damage} hitpoints of damage")
+        print(f"")
+        defender.hp -= damage
+        if defender.hp <= 0:
+            defender.hp = 0
+            defender.display_stats()
+            print (f"{defender.name} fainted !")
+            sys.exit()
+
+
+pikachu = Pokemon("Pikachu", 100, 55, 40, 90,
+                 [("Thunder Shock", 40), ("Quick Attack", 30), ("Agility", 0), ("Thunder", 70)])
+
+gyarados = Pokemon("Gyarados", 150, 85, 79, 81,
+                  [("Hydro Pump", 80), ("Bite", 45), ("Dragon Rage", 50), ("Hyper Beam", 90)])
+
+
+pikachu.display_stats()
+gyarados.display_stats()
+pikachu.attack_on(gyarados,1)
+gyarados.display_stats()
+gyarados.attack_on(pikachu,1)
+pikachu.display_stats()
+pikachu.attack_on(gyarados,3)
+gyarados.display_stats()
+gyarados.attack_on(pikachu,3)
+pikachu.display_stats()
+pikachu.attack_on(gyarados,1)
+gyarados.display_stats()
+

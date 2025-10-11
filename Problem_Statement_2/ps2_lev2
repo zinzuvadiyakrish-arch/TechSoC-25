@@ -1,0 +1,103 @@
+
+import math
+import sys
+import random
+
+from Tools.scripts.dutree import display
+
+i=1
+class Pokemon:
+    def __init__(self, name, hp, attack, defense, speed, moves):
+        self.name = name
+        self.hp = hp
+        self.hp_denominator = hp
+        self.attack = attack
+        self.defense = defense
+        self.speed = speed
+        self.moves = moves
+
+    def display_stats(self):
+        print("Name:", self.name, end=" ")
+        print("HP:" + str(self.hp) + "/" + str(self.hp_denominator), end=" ")
+        print("Attack:", self.attack, end=" ")
+        print("Defense:", self.defense, end=" ")
+        print("Speed:", self.speed, end=" ")
+        print("Moves:", self.moves)
+
+    def attack_on(self, defender, num):
+
+        base_damage = math.ceil((self.moves[num][1]) * (self.attack) / defender.defense)
+
+        print(f"{self.name} used {self.moves[num][0]} ")
+        l=random.randint(1,10)
+        if l == 1:
+            final_damage = base_damage * 2
+            print(f"Critical hit !! {defender.name} took {final_damage} hitpoints of damage")
+
+        else:
+            final_damage = base_damage
+            print(f"{defender.name} took {final_damage} hitpoints of damage")
+
+        defender.hp -= final_damage
+        if defender.hp <= 0:
+            defender.hp = 0
+            print(f"{defender.name} HP : {str(defender.hp) + '/' + str(defender.hp_denominator)}")
+            print(f"{defender.name} fainted !")
+            print('')
+            print(f"Battle Summary:")
+            print(f"-->Winner: {self.name}")
+            print(f"-->Turns: {i}")
+            sys.exit()
+
+
+pikachu = Pokemon("Pikachu", 100, 55, 40, 90,
+                  [("Thunder Shock", 40), ("Quick Attack", 30), ("Agility", 0), ("Thunder", 70)])
+
+gyarados = Pokemon("Gyarados", 150, 85, 79, 81,
+                   [("Hydro Pump", 80), ("Bite", 45), ("Dragon Rage", 50), ("Hyper Beam", 90)])
+
+class Battle:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def StartBattle(self,x,y):
+        global i
+        print("=== POKÉMON BATTLE BEGINS! ===")
+        print(f"{x.name} ({str(x.hp) + '/' + str(x.hp_denominator)}) vs {y.name} ({str(y.hp) + '/' + str(y.hp_denominator)})")
+        first, second = battle.attack_first(x, y)
+
+        while(i > 0):
+            print(f"Turn {i} : Now its time for {first.name} to attack")
+            k = random.randint(0, 3)
+            first.attack_on(second, k)
+            print(f"{second.name} HP : {str(second.hp) + '/' + str(second.hp_denominator)}")
+            print(f"")
+            [first, second] = [second, first]
+            i=i+1
+
+
+    def attack_first(self,x,y):
+        if x.speed > y.speed:
+          return[x,y]
+
+        elif x.speed < y.speed:
+            return [y,x]
+
+        else:
+            random_int = random.randint(0, 1)
+            if random_int == 1:
+                return [y, x]
+
+            else:
+                return [x,y]
+
+
+
+battle= Battle(pikachu,gyarados)
+battle.StartBattle(pikachu,gyarados)
+
+
+
+
+
+
